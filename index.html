@@ -61,15 +61,16 @@ var frameR = 15;
 var i =0;
 // var url = "https://s3-sa-east-1.amazonaws.com/artinstallationml2019/img/ML2018-033_1-min.jpg" 
 var url = "https://raw.githubusercontent.com/mross1080/artinstallationmlopez/master/img/ML2018-033_1-min.jpg"
-var url = "https://raw.githubusercontent.com/mross1080/artinstallationmlopez/master/img/ML2018-033_1-min.jpg"
+var url = "https://raw.githubusercontent.com/mross1080/artinstallationmlopez/master/img/ML2018-033_9-min1.jpg"
 
 
 function preload() {
   console.log("loading images")
-  img = loadImage('img/4544594.jpeg');
+  // img = loadImage('img/ML2018-033_9-min1.jpg');
+  // img[0] = img
 
   // for(var i = 0; i <= 4; i++){
-      // imgs[i] = loadImage(url);
+      imgs[i] = loadImage('img/ML2018-033_9-min1.jpg');
 
       // imgs[i] = loadImage('img/ML2018-033_' + (i+1) + '-min.jpg');
     
@@ -92,10 +93,10 @@ function draw(){
   currentTime++;
 
   // 
-  // imgs[currentImage].resize(0,100);
+  imgs[currentImage].resize(0,windowHeight);
   // image(imgs[currentImage], (windowWidth - imgs[currentImage].width) / 2, 0);
-    image(img, 20, 20,100,100);
-    image(img, 40, 40);
+    image( imgs[currentImage], 0, 0,windowWidth,windowHeight);
+    // image(img, 40, 40);
 
 
 
