@@ -61,18 +61,20 @@ var frameR = 15;
 var i =0;
 // var url = "https://s3-sa-east-1.amazonaws.com/artinstallationml2019/img/ML2018-033_1-min.jpg" 
 var url = "https://raw.githubusercontent.com/mross1080/artinstallationmlopez/master/img/ML2018-033_1-min.jpg"
+var url = "https://raw.githubusercontent.com/mross1080/artinstallationmlopez/master/img/ML2018-033_1-min.jpg"
 
-// function preload() {
-//   console.log("loading images")
-//   //img = loadImage('img/img_01.jpg');
 
-//   // for(var i = 0; i <= 4; i++){
-//       imgs[i] = loadImage(url);
+function preload() {
+  console.log("loading images")
+  img = loadImage('img/4544594.jpeg');
 
-//       // imgs[i] = loadImage('img/ML2018-033_' + (i+1) + '-min.jpg');
+  // for(var i = 0; i <= 4; i++){
+      // imgs[i] = loadImage(url);
+
+      // imgs[i] = loadImage('img/ML2018-033_' + (i+1) + '-min.jpg');
     
-//   // }
-// }
+  // }
+}
 function setup(){
   createCanvas(windowWidth,windowHeight);
     // createCanvas(768,windowHeight);
@@ -80,7 +82,7 @@ function setup(){
   background(255);
   /*
   image(img, (windowWidth - img.width) / 2, 0);*/
-  img = loadImage(url);  // Load the image
+  // img = loadImage(url);  // Load the image
 }
 
 function draw(){
