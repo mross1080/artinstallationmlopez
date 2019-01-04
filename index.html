@@ -39,7 +39,7 @@ div.cover {
     <script>
       // var img_num = 43;
 // var img_num = 10;
-var img_num = 4;
+var img_num = 1;
 
 
 var imgs = [];
@@ -58,15 +58,17 @@ var stop = false;
 var speed = false;
 
 var frameR = 15;
+var i =0;
 
 function preload() {
   console.log("loading images")
   //img = loadImage('img/img_01.jpg');
-  for(var i = 0; i <= 4; i++){
+
+  // for(var i = 0; i <= 4; i++){
 
       imgs[i] = loadImage('img/ML2018-033_' + (i+1) + '-min.jpg');
     
-  }
+  // }
 }
 function setup(){
   createCanvas(windowWidth,windowHeight);
